@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre o seu pet para realizar o exame veterinário!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Cadastre-se aqui!</h1>
+                <p>Descreva as características do seu bichinho!</p>
+                <form>
+                    <div class="box-input">
+                        <label for="name">Nome do pet: <span class="required-field">*</span></label>
+                        <input type="text" name="name" id="name" class="block" placeholder="Digite o nome do seu animalzinho" minlength="3" maxlength="15" required>
+                    </div>
+                    <div class="box-input">
+                        <p>Sexo do pet: <span class="required-field">*</span></p>
+                        <input type="radio" name="gender" id="male" required>
+                        <label for="gender">Macho</label>
+                        <input type="radio" name="gender" id="female" required>
+                        <label for="gender">Fêmea</label>
+                    </div>
+                    <div class="box-input">
+                        <label for="birthdate">Data de aniversário do pet: <span class="required-field">*</span></label>
+                        <input type="date" name="birthdate" id="birthdate" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <p>Que animal é o seu pet?: <span class="required-field">*</span></p>
+                        <select name="animal" id="animal" class="animal">
+                            <option value="dog">Cachorro</option>
+                            <option value="cat">Gato</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="bird">Pássaro</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="race">Qual a raça do seu pet?: <span class="required-field">*</span></label>
+                        <input type="text" name="race" id="race" class="block" placeholder="Digite a raça do seu animalzinho" minlength="3" maxlength="15" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="exam-date">Data do exame: <span class="required-field">*</span></label>
+                        <input type="date" name="exam-date" id="exam-date" class="block" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="exam-time">Hora do exame: <span class="required-field">*</span></label>
+                        <input type="time" name="exam-time" id="exam-time" class="block" required>
+                    </div>
+                    <div class="optional-box">
+                        <p>Opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="bath" value="bath">
+                                <label for="bath">Banho</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="grooming" value="grooming">
+                                <label for="grooming">Tosa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="cn" value="cn">
+                                <label for="cn">Cortar as unhas</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="medicine" value="medicine">
+                                <label for="medicine">Medicar</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" name="optional[]" id="collar" value="collar">
+                                <label for="collar">Colocar coleira</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="buy-ac" value="buy-ac">
+                                <label for="buy-ac">Comprar acessórios</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="buy-food" value="buy-food">
+                                <label for="buy-food">Comprar comida</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" id="buy-toys" value="buy-toys">
+                                <label for="buy-toys">Comprar brinquedos</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do pet: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image,jpg" id="images" name="images" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="tutor-name">Nome do tutor: <span class="required-field">*</span></label>
+                        <input type="text" name="tutor-name" id="tutor-name" class="block" placeholder="Digite o seu nome" minlength="3" maxlength="15" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="phone-number">Número do tutor: <span class="required-field">*</span></label>
+                        <input type="text" name="phone-number" id="phone-number" class="block" placeholder="Digite o numero de celular" maxlength="11" required>
+                    </div>
+                    <input type="submit" value="Marcar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
